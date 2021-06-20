@@ -4,7 +4,7 @@
     <input type="text" placeholder="Name" v-model="username" />
     <button :disabled="!username" @click="joinGame">Join</button>
   </div>
-  <div v-else>
+  <div v-else class="container">
     <img v-for="answer in answers" :key="answer.id" :src="answer.photoURL" :alt="answer.name" class="answer-button" @click="submitAnswer(answer.id)">
   </div>
 </template>
@@ -57,8 +57,17 @@ export default defineComponent({
 </script>
 
 <style scoped>
+.container {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .answer-button {
-  width: 50px;
-  height: 50px;
+  border-radius: 100%;
+  width: 164px;
+  margin: 24px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
 }
 </style>

@@ -4,7 +4,7 @@ const questions: { text: string, answer: 'eric' | 'ian' | 'adam' }[] = [
    answer: "eric"
  },
  {
-   text: "Which one of the truimphet trio loved monkeys so much he wanted a brother named after Tarzan?",
+   text: "Which one of the triumphet trio loved monkeys so much he wanted a brother named after Tarzan?",
    answer: "ian"
  },
  {

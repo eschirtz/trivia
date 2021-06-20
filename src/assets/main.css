@@ -1,0 +1,38 @@
+:root {
+  --primary-text: rgba(0,0,0,0.7);
+  --accent-color: #4CAF50;
+
+  --basic-color: rgb(245,245,245);
+  --success-color: rgb(105, 221, 105);
+  --error-color: rgb(243, 81, 81);
+  --border-radius: 8px;
+}
+
+h1 {
+  font-weight: black;
+  color: var(--primary-text);
+}
+
+h4 {
+  font-weight: bold;
+  font-size: 1.4em;
+}
+
+p {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+button {
+  background-color: var(--accent-color);
+  border: none;
+  border-radius: var(--border-radius);
+  color: white;
+  font-weight: bold;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
